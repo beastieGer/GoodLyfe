@@ -1,0 +1,192 @@
+@font-face {
+  font-family: "Manrope";
+  src: url("../fonts/Manrope-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Manrope";
+  src: url("../fonts/Manrope-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Manrope";
+  src: url("../fonts/Manrope-Semibold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "OpenSans";
+  src: url("../fonts/OpenSans-SemiBold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/Poppins-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/Poppins-SemiBold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/Poppins-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/Poppins-ExtraBold.woff2") format("woff2");
+  font-weight: 800;
+  font-style: normal;
+}
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a,
+a:hover {
+  text-decoration: none;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+button,
+input,
+button:focus,
+input:focus {
+  border: none;
+  outline: none;
+  background: none;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins" sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+.h1 {
+  font-weight: 800;
+  font-size: 4.375rem;
+  line-height: 1.1;
+}
+
+.h2 {
+  font-weight: 800;
+  font-size: 3.75rem;
+  line-height: 1.1;
+}
+
+.h3 {
+  font-weight: 600;
+  font-size: 3rem;
+  line-height: 1.1;
+}
+
+.h4 {
+  font-weight: 800;
+  font-size: 2.5rem;
+  line-height: 1.1;
+}
+
+.h5 {
+  font-weight: 600;
+  font-size: 2.375rem;
+  line-height: 1.1;
+}
+
+.btn,
+.btn-outline {
+  display: inline-block;
+  min-width: 14.8125rem;
+  height: 4.25rem;
+  line-height: 4.25rem;
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 1rem;
+  letter-spacing: 0.046875rem;
+  white-space: nowrap;
+  text-align: center;
+  color: white;
+  background-color: #e43071;
+  border-radius: 2.125rem;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: #c71a58;
+}
+
+.btn:focus {
+  background-color: #c71a58;
+  outline: 0.5625rem solid #ffdae7;
+}
+
+.btn-outline {
+  border: 0.125rem solid #e43071;
+  color: #e43071;
+  background-color: #fff;
+  line-height: 4rem;
+}
+
+.btn-outline:hover {
+  color: #c71a58;
+  border-color: #c71a58;
+}
+
+.btn-outline:focus {
+  color: #e43071;
+  background-color: #fff;
+  border: 0.125rem solid #e43071;
+  outline: 0.5625rem solid #ffdae7;
+}
