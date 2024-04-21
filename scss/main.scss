@@ -2,7 +2,12 @@
 @import './base/var';
 @import './base/base';
 @import './base/typography';
+@import './base/icons';
+@import './base/form';
+
 
 @import './blocks/buttons';
+@import './blocks/header-menu';
+@import './blocks/header-search-wrapper';
 
 @import './section/header';

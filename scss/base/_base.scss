@@ -19,6 +19,13 @@ a:hover {
   text-decoration: none;
 }
 
+a,
+button {
+  font-size: inherit;
+  color: inherit;
+  cursor: pointer;
+}
+
 ul {
   padding: 0;
   margin: 0;
@@ -50,10 +57,31 @@ input:focus {
   background: none;
 }
 
+
+body {
+  --ac: #e43071;
+  --subAc: #ffc1d8;
+  --outBr: #ffdae7;
+  --darkAc: #be285e;
+}
+
+body.green-theme {
+  --ac: #26d68a;
+  --subAc: #9be8c7;
+  --outBr: #a1e7c9;
+  --darkAc: #0b9056;
+}
+
 html,
 body {
   padding: 0;
   margin: 0;
   font-family: 'Poppins' sans-serif;
   -webkit-font-smoothing: antialiased;
+  background-color: white;
+}
+
+.d-flex {
+  display: flex;
+  align-items: center;
 }

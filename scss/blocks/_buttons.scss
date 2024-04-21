@@ -3,6 +3,7 @@
   display: inline-block;
   min-width: remy(237);
   height: remy(68);
+  flex-shrink: 0;
   line-height: remy(68);
 
   font-family: inherit;
@@ -12,36 +13,58 @@
   white-space: nowrap;
   text-align: center;
   color: white;
-  background-color: $ac;
+  background-color: var(--ac);
   border-radius: remy(34);
-  cursor: pointer;
   transition: .3s;
 }
 
 .btn:hover {
-  background-color: darken($ac, 10);
+  background-color: var(--darkAc);
 }
 
 .btn:focus {
-  background-color: darken($ac, 10);
-  outline: remy(9) solid $outBr;
+  background-color: var(--darkAc);
+  outline: remy(9) solid var(--outBr);
 }
 
 .btn-outline {
-  border: remy(2) solid $ac;
-  color: $ac;
+  border: remy(2) solid var(--ac);
+  color: var(--ac);
   background-color: #fff;
   line-height: remy(64);
 }
 
+.btn-outline--slim {
+  min-width: remy(166);
+  height: remy(50);
+  font-weight: 400;
+  line-height: remy(46);
+}
+
 .btn-outline:hover {
-  color: darken($ac, 10);
-  border-color: darken($ac, 10);
+  color: var(--darkAc);
+  border-color: var(--darkAc);
 }
 
 .btn-outline:focus {
-  color: $ac;
+  color: var(--ac);
   background-color: #fff;
-  border: remy(2) solid $ac;
-  outline: remy(9) solid $outBr;
+  border: remy(2) solid var(--ac);
+  outline: remy(9) solid var(--outBr);
+}
+
+.btn-outline--slim:focus {
+  outline: remy(5) solid var(--outBr);
+}
+
+.search-open {
+  height: remy(50);
+  column-gap: remy(6);
+  color: white;
+  background: transparent;
+  transition: opacity .3s ease;
+
+  &:hover {
+    opacity: .7;
+  }
 }
