@@ -52,6 +52,7 @@ button,
 input,
 button:focus,
 input:focus {
+  padding: 0;
   border: none;
   outline: none;
   background: none;
@@ -72,11 +73,15 @@ body.green-theme {
   --darkAc: #0b9056;
 }
 
+.lock {
+  overflow: hidden;
+}
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: 'Poppins' sans-serif;
+  font-family: 'Poppins', sans-serif;
   -webkit-font-smoothing: antialiased;
   background-color: white;
 }

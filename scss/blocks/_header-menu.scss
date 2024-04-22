@@ -2,6 +2,37 @@
   column-gap: remy(70);
   flex-shrink: 0;
 
+  @media (max-width:1439px) {
+    column-gap: 2.5rem;
+  }
+
+  @media (max-width: 1024px) {
+    column-gap: 1.5rem;
+  }
+
+  @media (max-width:991px) {
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--ac);
+
+    padding-block: remy(40);
+    flex-direction: column;
+    row-gap: remy(12);
+    font-size: remy(20);
+
+    transform: translateX(110%);
+    transition: transform .3s ease;
+
+    &.active {
+      display: flex;
+      transform: translateX(0);
+    }
+  }
+
   a {
     padding: remy(3);
     color: white;

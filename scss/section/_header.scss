@@ -5,12 +5,21 @@
   line-height: 1.095;
   color: #fff;
 
+  @media (max-width: 1024px) {
+    font-size: remy(32);
+  }
+
+  @media (max-width: 574px) {
+    // font-size: remy(22);
+  }
+
   span {
     color: var(--subAc);
   }
 }
 
 .header {
+  position: relative;
 
   &__container {
     padding-inline: remy(15);
@@ -26,9 +35,28 @@
   position: relative;
   z-index: 3;
 
+  @media (max-width: 767px) {
+    height: remy(64);
+  }
+
   &__btn {
     margin-left: remy(73);
     column-gap: remy(40);
+
+    @media (max-width: 1439px) {
+      margin-left: 2.5rem;
+    }
+
+    @media (max-width: 1024px) {
+      margin-left: 1.5rem;
+      column-gap: 1.5rem;
+    }
+
+    @media (max-width: 991px) {
+      & .btn-outline {
+        display: none;
+      }
+    }
   }
 }
 

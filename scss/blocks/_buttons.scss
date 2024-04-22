@@ -67,4 +67,10 @@
   &:hover {
     opacity: .7;
   }
+
+  @media (max-width:574px) {
+    span {
+      display: none;
+    }
+  }
 }

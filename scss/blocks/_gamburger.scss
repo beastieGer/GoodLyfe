@@ -1,0 +1,58 @@
+.menu-toggle {
+  width: remy(30);
+  height: remy(30);
+  justify-content: center;
+  align-items: center;
+  display: none;
+  z-index: 11;
+  cursor: pointer;
+
+  @media (max-width:991px) {
+    display: flex;
+  }
+
+  span {
+    width: 100%;
+    height: remy(2);
+    position: relative;
+    background-color: white;
+    border-radius: remy(3);
+    transition: all .2s ease;
+
+    &::after,
+    &::before {
+      content: '';
+      height: 2px;
+      position: absolute;
+      left: 0;
+      right: 0;
+      background-color: white;
+      border-radius: 5px;
+      transition: .2s;
+    }
+
+    &::after {
+      top: -7px;
+    }
+
+    &::before {
+      bottom: -7px;
+    }
+  }
+}
+
+.active.menu-toggle span {
+  background-color: transparent !important;
+
+  &::after {
+    top: 0;
+    transform: rotate(45deg);
+    background-color: #fff;
+  }
+
+  &::before {
+    bottom: 0;
+    transform: rotate(-45deg);
+    background-color: #fff;
+  }
+}

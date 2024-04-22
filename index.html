@@ -11,31 +11,6 @@
 
 <body>
   <header class="header">
-    <div class="header-nav d-flex">
-      <div class="header__container d-flex">
-        <a class="logo" href="#!">Good<span>lyfe</span></a>
-
-        <nav class="header-menu d-flex">
-          <a href="#!">Classess</a>
-          <a href="#!">Timetable</a>
-          <a href="#!">Clubs</a>
-          <a href="#!">Nutrition</a>
-          <a href="#!">Free Trial</a>
-        </nav>
-
-        <div class="header-nav__btn d-flex">
-          <button class="search-open d-flex" id="search-open">
-            <span>Search</span>
-            <svg class="svg-search">
-              <use href="./img/sprite/solid.svg#magnifying-glass"></use>
-            </svg>
-          </button>
-
-          <button class="btn-outline btn-outline--slim">Login</button>
-        </div>
-      </div>
-    </div>
-
     <div class="header-search-wrapper" id="header-search-form">
       <div class="header__container">
         <form class="search-form">
@@ -53,6 +28,34 @@
             </button>
           </div>
         </form>
+      </div>
+    </div>
+
+    <div class="header-nav d-flex">
+      <div class="header__container d-flex">
+        <a class="logo" href="#!">Good<span>lyfe</span></a>
+
+        <nav class="header-menu d-flex" id="header-menu">
+          <a href="#!">Classess</a>
+          <a href="#!">Timetable</a>
+          <a href="#!">Clubs</a>
+          <a href="#!">Nutrition</a>
+          <a href="#!">Free Trial</a>
+        </nav>
+
+        <div class="header-nav__btn d-flex">
+          <button class="search-open d-flex" id="search-open">
+            <span>Search</span>
+            <svg class="svg-search">
+              <use href="./img/sprite/solid.svg#magnifying-glass"></use>
+            </svg>
+          </button>
+
+          <button class="btn-outline btn-outline--slim">Login</button>
+
+          <!-- burger -->
+          <button class="menu-toggle" id="menu-toggle"><span></span></button>
+        </div>
       </div>
     </div>
 
