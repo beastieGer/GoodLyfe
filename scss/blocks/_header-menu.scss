@@ -11,21 +11,14 @@
   }
 
   @media (max-width:991px) {
-    position: fixed;
-    z-index: 10;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: var(--ac);
-
+    margin-left: auto;
+    width: remy(320);
+    height: 100%;
     padding-block: remy(40);
     flex-direction: column;
     row-gap: remy(12);
-    font-size: remy(20);
-
-    transform: translateX(110%);
-    transition: transform .3s ease;
+    font-size: remy(20); //
+    background-color: var(--ac);
 
     &.active {
       display: flex;
@@ -40,6 +33,26 @@
 
     &:hover {
       opacity: .7;
+    }
+  }
+}
+
+#header-menu {
+  @media (max-width:991px) {
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    transform: translateX(110%);
+    transition: transform .3s ease;
+    background-color: rgba(255, 255, 255, .7);
+
+    &.active {
+      display: flex;
+      transform: translateX(0);
     }
   }
 }
