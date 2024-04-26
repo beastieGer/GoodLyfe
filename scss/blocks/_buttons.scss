@@ -6,16 +6,19 @@
   flex-shrink: 0;
   line-height: remy(68);
 
-  font-family: inherit;
   font-weight: 600;
   font-size: 1rem;
-  letter-spacing: remy(.75);
   white-space: nowrap;
   text-align: center;
   color: white;
   background-color: var(--ac);
   border-radius: remy(34);
   transition: .3s;
+
+  @media (max-width:991px) {
+    height: remy(56);
+    line-height: remy(56);
+  }
 }
 
 .btn:hover {
@@ -32,6 +35,11 @@
   color: var(--ac);
   background-color: #fff;
   line-height: remy(64);
+
+  @media (max-width:991px) {
+    height: remy(60);
+    line-height: remy(56);
+  }
 }
 
 .btn-outline--slim {

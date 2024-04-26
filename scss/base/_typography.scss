@@ -1,5 +1,9 @@
+.accent-span {
+  color: var(--subAc) !important;
+}
+
 .h1 {
-  font-weight: 800;
+  font-weight: 700;
   font-size: remy(70);
   line-height: 1.1;
 }
@@ -26,4 +30,16 @@
   font-weight: 600;
   font-size: remy(38);
   line-height: 1.1;
+}
+
+@media (max-width: 991px) {
+  .h1 {
+    font-size: remy(54);
+  }
+}
+
+@media (max-width: 767px) {
+  .h1 {
+    font-size: remy(32);
+  }
 }

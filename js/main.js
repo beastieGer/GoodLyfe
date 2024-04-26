@@ -23,5 +23,24 @@ document.addEventListener("DOMContentLoaded", function () {
 				bodyEl.classList.add("lock");
 			}
 		});
+
+		mobileMenu.addEventListener("click", () => {
+			menuToggle.classList.remove("active");
+			mobileMenu.classList.remove("active");
+			bodyEl.classList.remove("lock");
+		});
 	}
+
+	// swiper1
+	const headerSwiper = new Swiper(".header-slider", {
+		loop: true,
+		speed: 1000,
+		effect: "fade",
+		lazy: true,
+
+		pagination: {
+			el: ".swiper-pagination",
+			clickable: true,
+		},
+	});
 });

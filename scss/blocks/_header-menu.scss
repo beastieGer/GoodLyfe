@@ -19,6 +19,8 @@
     row-gap: remy(12);
     font-size: remy(20); //
     background-color: var(--ac);
+    transform: translateX(110%);
+    // transition: .3s;
 
     &.active {
       display: flex;
@@ -39,20 +41,50 @@
 
 #header-menu {
   @media (max-width:991px) {
+    display: none;
+    opacity: 0;
     position: fixed;
     z-index: 10;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-
-    transform: translateX(110%);
-    transition: transform .3s ease;
     background-color: rgba(255, 255, 255, .7);
+  }
+}
 
-    &.active {
-      display: flex;
-      transform: translateX(0);
-    }
+#header-menu.active {
+  display: block;
+  animation-name: opacity;
+  animation-duration: .3s;
+  animation-delay: .5s;
+  animation-fill-mode: forwards;
+
+  .header-menu {
+    // transform: translateX(0);
+    animation-name: move;
+    animation-duration: .3s;
+    animation-delay: .5s;
+    animation-fill-mode: forwards;
+  }
+}
+
+@keyframes move {
+  from {
+    transform: translateX(110%);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes opacity {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
   }
 }

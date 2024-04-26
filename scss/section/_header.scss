@@ -10,11 +10,7 @@
   }
 
   @media (max-width: 574px) {
-    // font-size: remy(22);
-  }
-
-  span {
-    color: var(--subAc);
+    font-size: remy(22);
   }
 }
 
@@ -33,7 +29,7 @@
   height: remy(101);
   background-color: var(--ac);
   position: relative;
-  z-index: 3;
+  z-index: 5;
 
   @media (max-width: 767px) {
     height: remy(64);
@@ -59,5 +55,3 @@
     }
   }
 }
-
-.header-slider {}
