@@ -2,6 +2,10 @@
   color: var(--subAc) !important;
 }
 
+.txt-accent {
+  color: var(--ac) !important;
+}
+
 .h1 {
   font-weight: 700;
   font-size: remy(70);
@@ -23,7 +27,7 @@
 .h4 {
   font-weight: 800;
   font-size: remy(40);
-  line-height: 1.1;
+  line-height: 1.5;
 }
 
 .h5 {
@@ -41,5 +45,9 @@
 @media (max-width: 767px) {
   .h1 {
     font-size: remy(32);
+  }
+
+  .h4 {
+    line-height: 1.2;
   }
 }

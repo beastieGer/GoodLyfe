@@ -19,6 +19,11 @@
     height: remy(56);
     line-height: remy(56);
   }
+
+  @media (max-width:767px) {
+    width: 100%;
+    max-width: remy(288);
+  }
 }
 
 .btn:hover {

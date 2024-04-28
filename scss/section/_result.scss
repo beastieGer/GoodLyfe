@@ -1,0 +1,44 @@
+.result {
+  padding-top: remy(94);
+  padding-bottom: remy(122);
+
+  &-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: remy(30);
+  }
+
+  &__img {
+    flex-shrink: 0;
+  }
+
+  &__img-top {}
+
+  &__img-bottom {}
+
+  &__descrip {
+    max-width: remy(540);
+    flex-grow: 1;
+  }
+
+  .h4 {
+    margin-bottom: remy(6);
+
+    @media (max-width:767px) {
+      margin-bottom: remy(11);
+    }
+  }
+
+  &__descrip-text {
+    margin-bottom: remy(28);
+    font-size: 1rem;
+    line-height: remy(37);
+
+    @media (max-width:767px) {
+      padding-right: remy(20);
+      margin-bottom: remy(48);
+      line-height: remy(32);
+    }
+  }
+}
