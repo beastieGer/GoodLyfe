@@ -11,13 +11,18 @@
 
   &__img {
     flex-shrink: 0;
+    display: flex;
   }
 
   &__img-top {}
 
-  &__img-bottom {}
+  &__img-bottom {
+    padding-top: remy(144);
+    margin-left: remy(-144);
+  }
 
   &__descrip {
+    padding-bottom: remy(23);
     max-width: remy(540);
     flex-grow: 1;
   }

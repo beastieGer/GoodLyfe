@@ -825,8 +825,16 @@ body {
 .result__img {
   -ms-flex-negative: 0;
       flex-shrink: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.result__img-bottom {
+  padding-top: 9rem;
+  margin-left: -9rem;
 }
 .result__descrip {
+  padding-bottom: 1.4375rem;
   max-width: 33.75rem;
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
