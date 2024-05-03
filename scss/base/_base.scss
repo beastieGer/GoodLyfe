@@ -73,6 +73,11 @@ body.green-theme {
   --darkAc: #0b9056;
 }
 
+*.section-pb {
+  padding-top: remy(64);
+  padding-bottom: remy(71);
+}
+
 .lock {
   overflow: hidden;
 }
