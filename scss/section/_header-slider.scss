@@ -1,4 +1,4 @@
-.header-content {
+.slider-content {
   height: calc(100vh - remy(110));
   max-height: remy(1100);
   position: relative;
@@ -21,6 +21,9 @@
   }
 
   &__title {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    width: 100%;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -31,6 +34,8 @@
 
     .h1 {
       margin-bottom: remy(23);
+      margin-left: auto;
+      margin-right: auto;
       width: 15ch;
     }
 
@@ -49,7 +54,7 @@
     }
   }
 
-  &__svg {
+  .header-content__svg {
     position: absolute;
     left: 0;
     right: 0;
@@ -78,7 +83,7 @@
   }
 }
 
-.header-slider {
+.swiper {
   --swiper-pagination-bottom: 60px;
   height: 100%;
 
@@ -112,9 +117,7 @@
     background-color: rgba(45, 40, 36, .2);
     z-index: 2;
   }
-}
 
-.swiper {
   &-pagination {
     &-bullet {
       --swiper-pagination-bullet-horizontal-gap: 6px;

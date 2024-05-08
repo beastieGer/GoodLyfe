@@ -36,9 +36,20 @@
   line-height: 1.1;
 }
 
+.subtitle {
+  font-family: 'OpenSans';
+  font-weight: 600;
+  font-size: remy(17);
+  line-height: 1.35;
+}
+
 @media (max-width: 991px) {
   .h1 {
     font-size: remy(54);
+  }
+
+  .h2 {
+    font-size: remy(48);
   }
 }
 
@@ -47,7 +58,15 @@
     font-size: remy(32);
   }
 
+  .h2 {
+    font-size: remy(42);
+  }
+
   .h4 {
     line-height: 1.2;
+  }
+
+  .subtitle {
+    font-size: remy(16);
   }
 }

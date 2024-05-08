@@ -73,6 +73,10 @@
     padding-bottom: remy(23);
     max-width: remy(540);
     flex-grow: 1;
+
+    @media (max-width: 767px) {
+      padding-bottom: 0;
+    }
   }
 
   .h4 {
