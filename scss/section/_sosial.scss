@@ -1,0 +1,9 @@
+.sosial {
+  height: 500px;
+  background-color: #ededed;
+  position: relative;
+
+  @media (max-width:767px) {
+    position: static;
+  }
+}
