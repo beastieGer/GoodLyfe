@@ -1371,12 +1371,28 @@ body {
   padding-bottom: 55px;
   color: white;
   background-color: var(--ac);
+  position: relative;
+}
+.app::after {
+  content: "";
+  height: 20px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ededed;
+  display: none;
+}
+@media (max-width: 991px) {
+  .app::after {
+    display: block;
+  }
 }
 @media (max-width: 767px) {
   .app {
-    padding-top: 50px;
-    padding-bottom: 103px;
-    overflow-x: hidden;
+    padding-top: 51px;
+    padding-bottom: 119px;
+    overflow: hidden;
   }
 }
 .app-container {
@@ -1434,9 +1450,13 @@ body {
           align-items: center;
   gap: 12px;
 }
+.app-links__group a {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
 @media (max-width: 767px) {
   .app-links__group img {
-    width: 136px;
+    width: 133px;
     height: 40px;
   }
 }
@@ -1446,6 +1466,8 @@ body {
   display: flex;
   gap: 32px;
   margin-top: -137px;
+  position: relative;
+  z-index: 3;
 }
 @media (max-width: 1199px) {
   .app-images {

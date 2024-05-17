@@ -3,11 +3,27 @@
   padding-bottom: 55px;
   color: white;
   background-color: var(--ac);
+  position: relative;
+
+  &::after {
+    content: '';
+    height: 20px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ededed;
+    display: none;
+
+    @media (max-width:991px) {
+      display: block;
+    }
+  }
 
   @media (max-width:767px) {
-    padding-top: 50px;
-    padding-bottom: 103px;
-    overflow-x: hidden;
+    padding-top: 51px;
+    padding-bottom: 119px;
+    overflow: hidden;
   }
 
   &-container {
@@ -57,9 +73,13 @@
       align-items: center;
       gap: 12px;
 
+      a {
+        flex-shrink: 0;
+      }
+
       @media (max-width:767px) {
         img {
-          width: 136px;
+          width: 133px;
           height: 40px;
         }
       }
@@ -70,6 +90,8 @@
     display: flex;
     gap: 32px;
     margin-top: -137px;
+    position: relative;
+    z-index: 3;
 
     @media (max-width:1199px) {
       gap: 23px;
